@@ -1,0 +1,86 @@
+:root {
+  --red: #e63946;
+  --honey: #f1faee;
+  --powder: #a8dadc;
+  --celadon: #457b9d;
+  --prussian: #1d3557;
+}
+
+html {
+  color: var(--honey);
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1rem;
+}
+
+section {
+  margin: 0px 50px 50px 50px;
+}
+
+article {
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+article img{
+    max-width: 120px;
+}
+h3 {
+
+}
+
+h4 {
+  margin: 5px 0;
+}
+
+p {
+  margin: 5px 0;
+}
+
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 350px;
+}
+
+#download-pdf {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  text-decoration: none;
+}
+
+#main-container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 0;
+  background-color: var(--celadon);
+  /* max-width: 1440px; */
+}
+
+#main {
+  min-width: 400px;
+  max-width: 900px;
+  padding: 50px 50px;
+  background-color: var(--honey);
+  color: var(--prussian);
+  border-radius: 10px;
+  position: relative;
+}
+
+header {
+  flex-direction: column;
+  display: inline-flex;
+}
