@@ -23,7 +23,9 @@ body {
   flex-direction: column;
   overflow-x: hidden;
   flex-wrap: wrap;
+  background-color: var(--celadon);
 }
+
 
 header {
   position: sticky;
@@ -99,22 +101,27 @@ nav label {
 /* content */
 
 main{
-  min-width: 600px;
+  min-width: 500px;
   flex-direction: column;
   display: flex;
   padding-top: 30px;
   padding-bottom: 100px;
   padding: 100px 15%;
   background-color: var(--celadon);
+  margin: auto;
 }
 
 div#sub-main-container{
     background-color: var(--honey);
     border-radius: 2rem;
+    flex-direction: column;
     display:flex;
     justify-content: center;
 }
 
+script{
+  max-width: 80%;
+}
 div#main{
     margin: 1rem 1rem;
     flex-direction: column;
@@ -126,7 +133,8 @@ div#main{
 h1{
     display: flex;
     justify-content: center;
-    color:var(--prussian)
+    color:var(--prussian);
+    margin: 1rem;
   }
 
 section#undefined{
@@ -138,13 +146,32 @@ section#undefined{
 
 h2, p, figcaption{
     text-align: center;
+    padding:0 15%;
 }
 
 img{
     padding: 0.5rem 0.5rem;
     display: block;
     margin: auto;
+    border-radius: 1rem;
 }
+
+section#home-server, section#the-virtual-coach-prototype{
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  margin: 0, auto;
+  padding-top: 1rem;
+}
+
+iframe{
+  min-width: 500px;
+  min-height: 300px;
+  max-height: 500px;
+  margin: auto;
+}
+
 
 /* footer */
 footer {
