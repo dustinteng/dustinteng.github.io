@@ -17,9 +17,7 @@
 html {
     scroll-behavior: smooth;
     background-color: var(--honey);
-    min-width: 275pxl
   }
-  
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -31,6 +29,9 @@ body {
   background-color: var(--celadon);
 }
 
+main#main-container{
+    margin:3rem;
+}
 header {
     position: sticky;
     max-width: 100%;
@@ -149,7 +150,7 @@ footer div a img{
 
     #hamburger:checked + .navigation-items {
         position: fixed;
-        height: 100vh;
+        height: 100vha;
         width: 100vw;
         top: 0;
         left: 0;
@@ -177,7 +178,6 @@ footer div a img{
 
     main {
         max-width: 100%;
-        padding: 50px;
     }
     
     .profile-photo img {

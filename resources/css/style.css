@@ -10,13 +10,12 @@ nav {
 
 h1, h2,h3, h4, p{
   text-align: center;
-  margin: 10px 20px;
 }
 
 /* content */
 main{
   display: flex;
-  padding: 10px 10%;
+  padding: 10px 5%;
   margin: auto;
   background-color: var(--celadon);
 }
@@ -61,7 +60,6 @@ div#outerbox h2{
   text-align: center;
   padding-top: 1.2rem;
   color: var(--honey);
-  min-width: 500px;
 }
 
 div#midbox{
@@ -86,6 +84,44 @@ a{
   display: flex;
   justify-content: center;
 }
+
 div#innerbox img{
   max-width: 80%;
+}
+
+div#checkme{
+
+  display: flex;
+  align-items: center;
+  overflow: wrap;
+}
+
+@media (max-width: 600px) {
+  div#outerbox{
+    max-width: 100%;
+  }
+  div#midbox{
+    margin: 2rem 0.2rem;
+    background-color:var(--honey);
+    flex-direction: column;
+    display: flex;
+    border-radius: 2rem;
+    min-height: 300px;
+    padding: 1rem;
+  }
+
+  div#innerbox{
+    display: flex;
+    align-items: center;
+    color: var(--darkgrey);
+    max-width: 100%;
+    padding: 0.5rem;
+  }
+  
+  h2{
+    text-align: center;
+    width: 100%;
+  }
+  
+
 }

@@ -100,34 +100,29 @@ nav label {
 /* content */
 
 main {
+  
   flex-direction: column;
   display: flex;
-  padding-top: 30px;
-  padding-bottom: 100px;
-  padding: 100px 15%;
   background-color: var(--celadon);
   margin: auto;
 }
 
 #main-container {
-  max-width: 100%;
+  width: 60%;
+  margin-top: 3rem;
 }
 
 div#sub-main-container {
   background-color: var(--honey);
   border-radius: 2rem;
-  margin: auto;
   max-width: 100%;
   flex-direction: column;
   display: flex;
   justify-content: center;
 }
 
-script {
-  max-width: 80%;
-}
 div#main {
-  margin: 1rem 1rem;
+  
   flex-direction: column;
   display: flex;
   justify-content: center;
@@ -156,7 +151,6 @@ figcaption {
 }
 img,
 iframe {
-  padding: 0.5rem;
   display: block;
   margin: auto;
   border-radius: 1rem;
@@ -172,6 +166,43 @@ section#the-virtual-coach-prototype {
   justify-content: center;
   margin: 0, auto;
   padding-top: 1rem;
+}
+
+/* footer */
+footer{
+  margin-top: 3rem;
+  background-color: var(--honey);
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
+  
+}
+footer div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer div a{
+  text-decoration: none;
+  padding-top: 1.5rem;
+  margin: 0 1rem ;
+}
+
+footer p{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  color: black;
+  line-height: 2rem;
+}
+
+footer p a{
+  text-decoration: none;
+  color: black;
+}
+
+footer div a img{
+  max-width: 100%;
 }
 
 /* helper for flex down in body*/
@@ -190,14 +221,13 @@ section#the-virtual-coach-prototype {
     padding: 0.5rem 0.2rem;
     display: block;
     margin: auto;
-    border-radius: 1rem;
-    width: 100%;
+    max-width: 100%;
     height: auto;
   }
   h2,
   p,
   figcaption {
     text-align: center;
-    padding: 0 5%;
+    padding: 0 0;
   }
 }
