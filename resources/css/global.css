@@ -32,6 +32,7 @@ body {
 main#main-container{
     margin:3rem;
 }
+
 header {
     position: sticky;
     max-width: 100%;
@@ -41,7 +42,7 @@ header {
 nav {
   display: flex; /* to the right (1D)*/
   align-items: center;
-  padding: var(--spacing-1) 20px;
+  padding: var(--spacing-1) 10px;
   background-color: #f1faee;
   max-height: 50px;
   justify-content: space-between;
@@ -72,7 +73,7 @@ nav a#logo-link{
 }
 
 .navigation-item {
-  color: #fff;
+  background-color: #fff;
   font-family: "Oswald", sans-serif;
   font-size: 12px;
   font-weight: 300;
@@ -150,7 +151,7 @@ footer div a img{
 
     #hamburger:checked + .navigation-items {
         position: fixed;
-        height: 100vha;
+        height: 100vh;
         width: 100vw;
         top: 0;
         left: 0;
@@ -193,6 +194,10 @@ footer div a img{
 }
 /* helper for flex down in body*/
 @media (max-width: 900px) {
+    main#main-container{
+        margin: 1rem;
+        margin-top:3rem;
+    }
     main {
         flex-wrap: wrap;
     }

@@ -1,107 +1,4 @@
 
-:root {
-  --spacing-1: 8px;
-  --spacing-2: 12px;
-  --spacing-3: 16px;
-  --spacing-4: 24px;
-
-  --red: #E63946;
-  --honey: #F1FAEE;
-  --powder: #A8DADC;
-  --celadon: #457B9D;
-  --prussian: #1D3557;
-  --grey: #3E3E3E;
-  --darkgrey: #1B1B1B;
-}
-
-html {
-    scroll-behavior: smooth;
-    background-color: var(--honey);
-    min-width: 275pxl
-  }
-  
-
-body {
-  font-family: "Open Sans", sans-serif;
-  margin: 0;
-  padding: 0;
-  flex-direction: column;
-  overflow-x: hidden;
-  flex-wrap: wrap;
-  background-color: var(--celadon);
-}
-
-header {
-    position: sticky;
-    width: 100%;
-    z-index: 10;
-  }
-
-nav {
-  display: flex; /* to the right (1D)*/
-  align-items: center;
-  padding: var(--spacing-1) 20px;
-  background-color: #f1faee;
-  max-height: 50px;
-  justify-content: space-between;
-}
-
-nav a#logo-link{
-    text-decoration: none;
-    color: var(--prussian);
-    font-weight: 700;
-    cursor: pointer;
-}
-
-#logo-link {
-    display: flex;
-    align-items: center;
-}
-
-#logo-link img {
-  max-width: 50px;
-}
-
-#logo-link span{
-    margin-left: 1rem;
-}
-.navigation-items {
-  text-align: right;
-  display: inline-block;
-}
-
-.navigation-item {
-  color: #fff;
-  font-family: "Oswald", sans-serif;
-  font-size: 12px;
-  font-weight: 300;
-  text-transform: uppercase;
-  display: inline-block;
-  margin: var(--spacing-1);
-}
-
-.navigation-item a {
-    color: var(--prussian);
-    text-decoration: none;
-    font-weight: 700;
-    cursor: pointer;
-}
-
-.navigation-item a:hover {
-    color: var(--red);
-}
-
-nav label {
-    display: none;
-    cursor: pointer;
-    font-size: 1.5rem;
-    position: relative;
-}
-
-#hamburger {
-    display: none;
-}
-
 h1 {
   font-size: 1.8rem;
   font-weight: bold;
@@ -116,7 +13,7 @@ h2 {
 }
 
 section {
-  margin: 0px 50px 50px 50px;
+  margin: 0px 10px 50px 10px;
 }
 
 article {
@@ -155,7 +52,7 @@ main{
 #main-container {
   display: flex;
   justify-content: center;
-  margin: auto;
+  margin: 10px 10px;
   margin-top: 0;
   background-color: var(--celadon);
   /* max-width: 1440px; */
@@ -164,14 +61,20 @@ main{
 #main {
   min-width: 400px;
   max-width: 900px;
-  padding: 50px 50px;
   background-color: var(--honey);
   color: var(--prussian);
   border-radius: 10px;
   position: relative;
 }
 
-header {
-  flex-direction: column;
-  display: inline-flex;
+@media (max-width: 600px) {
+  #main {
+    min-width: 300px;
+    max-width: 400px;
+    padding: 50px 10px;
+    background-color: var(--honey);
+    color: var(--prussian);
+    border-radius: 10px;
+    position: relative;
+  }
 }
