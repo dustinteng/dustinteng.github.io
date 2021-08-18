@@ -33,7 +33,7 @@ body {
 
 header {
     position: sticky;
-    width: 100%;
+    max-width: 100%;
     z-index: 10;
   }
 
@@ -102,88 +102,6 @@ nav label {
     display: none;
 }
 
-/* content */
-main{
-    display: flex;
-    padding: 10px 10%;
-    margin: auto;
-    background-color: var(--celadon);
-}
-
-.about-me{
-    position: relative;
-    color: #f1faee;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-}
-
-.about-me p {
-    font-size: 1.1rem;
-    line-height: 1.5rem;
-
-}
-
-.profile-photo{
-    position: relative;
-    padding: 2rem;
-}
-.headshot{
-    border-radius: 10px;
-}
-
-/*projects*/
-
-div#outerbox {
-    margin:auto;
-    max-width: 100%;
-    min-width: 40%;
-    padding: 1rem 2rem;
-    background-color: var(--prussian);
-    color: var(--prussian);
-    flex-direction: column;
-    display: flex;
-
-}
-
-div#outerbox h2{
-    text-align: center;
-    padding-top: 1.2rem;
-    color: var(--honey);
-    min-width: 500px;
-}
-
-div#midbox{
-    margin: 2rem 4rem;
-    background-color:var(--honey);
-    display: flex;
-    justify-content: space-evenly;
-    border-radius: 2rem;
-    min-height: 300px;
-    padding: 1rem;
-}
-
-div#innerbox{
-    display: flex;
-    align-items: center;
-    color: var(--darkgrey);
-    max-width: 50%;
-    padding: 0.5rem;
-}
-
-a{
-    display: flex;
-    justify-content: center;
-}
-div#innerbox img{
-    max-width: 80%;
-}
-
-h1, h2,h3, h4, p{
-    text-align: center;
-    margin: 10px 20px;
-}
-
 /* footer */
 footer{
     background-color: var(--honey);
@@ -216,6 +134,9 @@ footer p a{
     color: black;
 }
 
+footer div a img{
+    max-width: 100%;
+}
 /* if max width is smaller than properties*/
 @media (max-width: 600px) {
     nav label {
@@ -256,7 +177,7 @@ footer p a{
 
     main {
         max-width: 100%;
-        padding: 50px 15px
+        padding: 50px;
     }
     
     .profile-photo img {

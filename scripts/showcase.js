@@ -101,18 +101,6 @@ const compileShowcases = async () => {
         <h2>${obj.fields.showcaseTitle}</h2>
       `;
 
-      obj.fields.videos?.links.forEach((link) => {
-        innerHTML += `
-          <iframe 
-            src="${link}" 
-            frameborder="0" 
-            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen
-            class="video"
-          ></iframe>
-        `;
-      });
-
       obj.fields.images?.forEach((image) => {
         innerHTML += `
           <figure>
@@ -122,6 +110,18 @@ const compileShowcases = async () => {
             </picture>
             <figcaption>${image.fields?.description}</figcaption>
           </figure>
+        `;
+      });
+
+      obj.fields.videos?.links.forEach((link) => {
+        innerHTML += `
+          <iframe 
+            src="${link}" 
+            frameborder="0" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen
+            class="video"
+          ></iframe>
         `;
       });
 
