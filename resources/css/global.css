@@ -28,6 +28,7 @@ body {
   flex-direction: column;
   overflow-x: hidden;
   flex-wrap: wrap;
+  background-color: var(--celadon);
 }
 
 header {
@@ -104,9 +105,7 @@ nav label {
 /* content */
 main{
     display: flex;
-    padding-top: 30px;
-    padding-bottom: 100px;
-    padding: 100px 15%;
+    padding: 10px 10%;
     margin: auto;
     background-color: var(--celadon);
 }
@@ -114,21 +113,23 @@ main{
 .about-me{
     position: relative;
     color: #f1faee;
-    margin-right: 5%;
-    max-width: 50%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
 }
 
 .about-me p {
-    font-size: 1.2rem;
-    line-height: 1.8rem;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+
 }
 
 .profile-photo{
     position: relative;
+    padding: 2rem;
 }
 .headshot{
     border-radius: 10px;
-    
 }
 
 /*projects*/
@@ -142,34 +143,46 @@ div#outerbox {
     color: var(--prussian);
     flex-direction: column;
     display: flex;
+
 }
 
 div#outerbox h2{
     text-align: center;
-    padding: 1rem 1rem;
+    padding-top: 1.2rem;
     color: var(--honey);
     min-width: 500px;
 }
 
 div#midbox{
-    margin: 0.5rem 3rem;
+    margin: 2rem 4rem;
     background-color:var(--honey);
     display: flex;
     justify-content: space-evenly;
     border-radius: 2rem;
-    min-height: 400px;
+    min-height: 300px;
+    padding: 1rem;
 }
 
 div#innerbox{
     display: flex;
     align-items: center;
     color: var(--darkgrey);
+    max-width: 50%;
+    padding: 0.5rem;
 }
 
+a{
+    display: flex;
+    justify-content: center;
+}
 div#innerbox img{
-    max-width: 350px;
+    max-width: 80%;
 }
 
+h1, h2,h3, h4, p{
+    text-align: center;
+    margin: 10px 20px;
+}
 
 /* footer */
 footer{
@@ -249,6 +262,7 @@ footer p a{
     .profile-photo img {
         width: 100%;
         height: auto;
+        
     }
     
     .about-me{
