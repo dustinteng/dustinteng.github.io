@@ -52,7 +52,7 @@ h2,
 p,
 figcaption {
   text-align: center;
-  padding: 0 20%
+  padding: 0 10%
 }
 img,
 iframe {
@@ -115,7 +115,7 @@ footer div a img{
   #main{
     margin:auto;
   }
-
+  
   img,
   iframe {
     padding: 0.5rem 0.2rem;

@@ -13,7 +13,7 @@ h2 {
 }
 
 section {
-  margin: 0px 10px 50px 10px;
+  margin: 0px 20px;
 }
 
 article {
@@ -23,6 +23,7 @@ article {
 
 article img{
     max-width: 120px;
+    margin: 10px 0px;
 }
 
 h4 {
@@ -53,7 +54,6 @@ main{
   display: flex;
   justify-content: center;
   margin: 10px 10px;
-  margin-top: 0;
   background-color: var(--celadon);
   /* max-width: 1440px; */
 }
@@ -71,7 +71,7 @@ main{
   #main {
     min-width: 300px;
     max-width: 400px;
-    padding: 50px 10px;
+    padding: 50px 5px;
     background-color: var(--honey);
     color: var(--prussian);
     border-radius: 10px;
