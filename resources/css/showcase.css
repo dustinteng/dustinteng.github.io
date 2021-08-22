@@ -58,7 +58,6 @@ img,
 iframe {
   display: block;
   margin: auto;
-  border-radius: 1rem;
   max-width: 40%;
   height: auto;
 }

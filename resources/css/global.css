@@ -34,9 +34,7 @@ main#main-container{
 }
 
 header {
-    position: sticky;
     max-width: 100%;
-    z-index: 10;
   }
 
 nav {
